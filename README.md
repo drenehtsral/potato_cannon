@@ -1,13 +1,26 @@
 # potato_cannon
 Various potato cannon related goodies
 
+## Disclaimer
+
+I take no responsibility for any damage you manage to do to yourself,
+others, or property.  You have to use your own common sense and avoid
+injuring yourself or others, breaking windows, denting cars, etc...  If you
+cannot take the necessary precautions to experiment safely then don't build
+a potato cannon. 
+
+## What's Here
+
 This repo contains an OpenSCAD design for a rifled slug to fit a bog standard potato cannon using a barrel made from 1 1/2 inch schedule 40 PVC pipe.
+
+![Potato Cannon Slug](./potato_cannon_slug.jpg)
 
 My setup to produce these slugs goes like so:
 1. Using OpenSCAD (I currently use the 2015.03-2 version) render and export to STL.  There are several tweakable parameters described in the file:
   * hollow -- Hollow out the center (except for the leading edge).
   * shrinkage_comp -- Scale the print to compensate for its shrinking as it cools.
   * rifle -- Whether to rifle the slug or leave it plain.
+  * There are more things that could be tweakable or made parametric but this seemed like a good start.
 2. I then slice the resulting .stl file in Slic3r using the following settings:
   * Bottom Solid Layers: 10
   * Top Solid Layers: 10
@@ -28,9 +41,13 @@ My setup to produce these slugs goes like so:
 
 ## Reference Implementation of a Spud Gun
 
+![Potato Gun Image](./potato_cannon.jpg)
+
 My potato cannon is fairly vanilla as combustion powered spud guns go... As mentioned above, it uses a chamber made from a 4 inch PVC coupler with a 4in-to-3in reducer and a 3in cleanout cap on the butt end and a 4in-to-3in reducer followed by a 3in-to-1½in coupler on the barrel end and a 1½in barrel.  It's built from schedule 40 PVC pipe and cemented together using PVC cement (the normal solvent welding process one always uses for PVC).
 
 I am using a gas BBQ grill piezoelectric igniter for a trigger and MAPP gas for the fuel charge (while the old AquaNet hair spray standby works well it tends to leave a sticky buildup over time that eventually interferes with the spark, and also the residual moisture makes repeated firings unreliable).
+
+![Igniter Detail](./igniter_detail.jpg)
 
 In addition I used a liberal puddle of PVC cement to fasten a short (~2cm) length of ½in pipe parallel to but inside the barrel at the chamber end to act as a stop for the projectile when using a ramrod to load the potato / slug / whatever.  It's just glommed on to the inner wall.
 
